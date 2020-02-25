@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     var image_count = 1
 
     @IBOutlet weak var imageButton: UIButton!
+    @IBOutlet weak var susumu: UIButton!
+    @IBOutlet weak var modoru: UIButton!
+    @IBOutlet weak var dousa: UIButton!
     
     @IBAction func buttonAction(_ sender: Any) {
     }
@@ -29,8 +32,11 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        self.timer.invalidate()
-        self.timer = nil
+        if self.timer != nil{
+            self.timer.invalidate()
+            self.timer = nil
+            dousa.setTitle("再生", for: .normal)
+        }
         let nextViewController:NextViewController = segue.destination as! NextViewController
         if image_count == 1{
             nextViewController.image = image1
@@ -59,9 +65,15 @@ class ViewController: UIViewController {
         
         if self.timer == nil{
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(update(_:)), userInfo: nil, repeats: true)
+            susumu.isEnabled = false
+            modoru.isEnabled = false
+            dousa.setTitle("停止", for: .normal)
         }else{
             self.timer.invalidate()
             self.timer = nil
+            susumu.isEnabled = true
+            modoru.isEnabled = true
+            dousa.setTitle("再生", for: .normal)
         }
     }
     

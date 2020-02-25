@@ -14,6 +14,9 @@
 		D97706BE24038B370046426C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97706BD24038B370046426C /* Assets.xcassets */; };
 		D97706C124038B370046426C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97706BF24038B370046426C /* LaunchScreen.storyboard */; };
 		D97706C92403FC7E0046426C /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97706C82403FC7E0046426C /* NextViewController.swift */; };
+		D97706ED240579150046426C /* A2.png in Resources */ = {isa = PBXBuildFile; fileRef = D97706EA240579150046426C /* A2.png */; };
+		D97706EE240579150046426C /* A3.png in Resources */ = {isa = PBXBuildFile; fileRef = D97706EB240579150046426C /* A3.png */; };
+		D97706EF240579150046426C /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = D97706EC240579150046426C /* A1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		D97706C024038B370046426C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D97706C224038B370046426C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97706C82403FC7E0046426C /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		D97706EA240579150046426C /* A2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A2.png; sourceTree = "<group>"; };
+		D97706EB240579150046426C /* A3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A3.png; sourceTree = "<group>"; };
+		D97706EC240579150046426C /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 		D97706B324038B340046426C /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				D97706EC240579150046426C /* A1.png */,
+				D97706EA240579150046426C /* A2.png */,
+				D97706EB240579150046426C /* A3.png */,
 				D97706B424038B340046426C /* AppDelegate.swift */,
 				D97706B624038B340046426C /* SceneDelegate.swift */,
 				D97706B824038B340046426C /* ViewController.swift */,
@@ -128,9 +137,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97706EE240579150046426C /* A3.png in Resources */,
+				D97706ED240579150046426C /* A2.png in Resources */,
 				D97706C124038B370046426C /* LaunchScreen.storyboard in Resources */,
 				D97706BE24038B370046426C /* Assets.xcassets in Resources */,
 				D97706BC24038B340046426C /* Main.storyboard in Resources */,
+				D97706EF240579150046426C /* A1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,10 +32,10 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="d6h-ay-0Du">
-                                        <rect key="frame" x="29" y="256" width="296" height="30"/>
+                                        <rect key="frame" x="81.666666666666686" y="256" width="191" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Poz-Ka-wal">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="進む">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,7 +45,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glZ-9D-uA3">
-                                                <rect key="frame" x="115" y="0.0" width="66" height="30"/>
+                                                <rect key="frame" x="79.999999999999986" y="0.0" width="31" height="30"/>
                                                 <color key="backgroundColor" red="0.52549019610000003" green="0.67450980390000004" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.52549019610000003" green="0.67450980390000004" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="戻る">
@@ -56,9 +56,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUo-fJ-JmV">
-                                                <rect key="frame" x="230" y="0.0" width="66" height="30"/>
+                                                <rect key="frame" x="160" y="0.0" width="31" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="再生/停止">
+                                                <state key="normal" title="再生">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -79,7 +79,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="dousa" destination="BUo-fJ-JmV" id="KFv-kE-5zH"/>
                         <outlet property="imageButton" destination="U9I-xS-ajO" id="zBd-2f-V0S"/>
+                        <outlet property="modoru" destination="glZ-9D-uA3" id="SXX-aK-KdQ"/>
+                        <outlet property="susumu" destination="Poz-Ka-wal" id="d7a-hY-Z5p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
